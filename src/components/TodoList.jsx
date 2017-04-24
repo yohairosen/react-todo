@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { toggleTodo } from '../actions';
+import { toggleTodo, testAsync } from '../actions';
 
 const Todo = ({
     onClick,
@@ -28,8 +28,7 @@ const Todo = ({
 
 const TodoList = ({
     todos,
-    onTodoClick,
-    dispatch
+    onTodoClick
     }) => (
     <ul>
         {todos.map(todo =>
@@ -52,7 +51,12 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         onTodoClick: (id) => {
-            dispatch(toggleTodo(id));
+            dispatch( testAsync());
+            //dispatch(toggleTodo(id));
+
+        },
+        test : ()=>{
+            testAsync()
         }
     };
 };

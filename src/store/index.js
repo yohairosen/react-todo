@@ -1,4 +1,7 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+
+
 
 const todo = (state, action) => {
   switch (action.type) {
@@ -55,4 +58,5 @@ const todoApp = combineReducers({
   visibilityFilter
 });
 
-export default createStore(todoApp)
+//export default createStore(todoApp)
+export default compose(applyMiddleware(thunk))(createStore)(todoApp);

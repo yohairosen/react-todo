@@ -7,8 +7,8 @@
     "node": ">=4.5.0",
     "npm": "^3.0.0"
   },
-
   "dependencies": {
+    "axios": "^0.16.1",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-plugin-transform-runtime": "^6.15.0",
@@ -17,6 +17,7 @@
     "babel-preset-stage-0": "^6.3.13",
     "babel-runtime": "^6.11.6",
     "better-npm-run": "0.0.13",
+    "body-parser": "^1.17.1",
     "compression": "^1.6.2",
     "css-loader": "^0.26.0",
     "cssnano": "^3.7.4",
@@ -28,6 +29,7 @@
     "imports-loader": "^0.7.0",
     "ip": "^1.1.2",
     "json-loader": "^0.5.4",
+    "mongoose": "^4.9.6",
     "node-sass": "^4.0.0",
     "normalize.css": "^5.0.0",
     "postcss-loader": "^1.1.0",
